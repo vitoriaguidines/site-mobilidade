@@ -1,0 +1,19 @@
+
+{% load static %}
+{% url 'visao_geral' as visao_geral %}
+{% url 'analise' as analise %}
+{% url 'monitoramento' as monitoramento %}
+
+<header>
+    <div class="menu-content">
+      <img src="{% static 'img/Grafismo - Branco.png' %}"  alt="" class="logo">
+      <h1 class="nome-friends">Friends</h1>
+      <nav class="header-menu">
+        <ul class="list-itens">
+          <li><a href="#">Visão Geral</a></li>
+          <li><a href="#">Geração</a></li>
+          <li><a href="#">Mapa</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
