@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Friends</title>
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <div class="menu-content">
-      <img src="img/Grafismo - Branco.png"  alt="" class="logo">
+      <img src="img/Grafismo - Branco.png" alt="" class="logo">
       <h1 class="nome-friends">Friends</h1>
       <nav class="header-menu">
         <ul class="list-itens">
@@ -33,32 +32,39 @@
           </div>
         </div>
         
+        
         <div class="container">
           <h1>Principal</h1>
-          <div>
-            <li class="atributos">
-                <p>Tensão (V)</p>
-                <p>Corrente (A)</p>
-                <p>Geração (KW)</p>
-                <p>Frequência (Hz)</p>
-            </li>
+          <div class="atributos">
+            <p>Tensão (V) <input type="text" class="output" /></p>
+            <p>Corrente (A) <input type="text" class="output" /></p>
+            <p>Geração (KW) <input type="text" class="output" /></p>
+            <p>Frequência (Hz) <input type="text" class="output" /></p>
           </div>
         </div>
-        <div class="container">
-          <h1>Principal</h1>
-          <div>
-            <li class="atributos">
-                <p>Tensão (V)</p>
-                <p>Corrente (A)</p>
-                <p>Geração (KW)</p>
-                <p>Frequência (Hz)</p>
-            </li>
+        
+        <div class="container" id="ied-container">
+          <h1>IED</h1>
+          <div class="atributos">
+            <p>Tensão (V) <input type="text" class="output" /></p>
+            <p>Corrente (A) <input type="text" class="output" /></p>
+            <p>Geração (KW) <input type="text" class="output" /></p>
+            <p>Frequência (Hz) <input type="text" class="output" /></p>
+          </div>
+        </div>
+        <div class="additional-container">
+          <h1>Additional Container</h1>
+          <div class="checkboxes">
+            <label>
+              <input type="checkbox" name="checkbox1"> Checkbox 1
+            </label>
+            <label>
+              <input type="checkbox" name="checkbox2"> Checkbox 2
+            </label>
           </div>
         </div>
       </div>
     </div>
-
   </main>
-
 </body>
 </html>

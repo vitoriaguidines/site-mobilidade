@@ -80,8 +80,10 @@ main {
 
 .main-content {
   display: flex;
-  justify-content: center;
+  justify-content: row;
+  justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -93,6 +95,8 @@ main {
   position: relative;
   box-sizing: border-box;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .container h1 {
@@ -102,7 +106,7 @@ main {
   margin: 2%;
 }
 
-.atributos{
+.atributos {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
@@ -111,6 +115,19 @@ main {
   gap: 20px;
   margin: 5%;
 }
+
+.atributos p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.atributos p input {
+  background-color: rgba(255, 255, 255, 0.1); /* Set a transparent white background */
+  border: 1px solid white; /* Add a white border */
+  color: white;
+  text-align: right;
+}
+
 
 .vg-geracao{
   
@@ -145,6 +162,43 @@ main {
 
 .logo {
   height: 50px;
+}
+
+.additional-container {
+  width: 400px;
+  height: 230px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-bottom: 7%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.additional-container h1 {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 2%;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  color: white;
+  position: relative;
+  gap: 20px;
+  margin: 5%;
+}
+
+.checkboxes label {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxes input[type="checkbox"] {
+  margin-right: 10px;
 }
 
 /*
