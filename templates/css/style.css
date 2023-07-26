@@ -72,7 +72,6 @@ a:hover:before {
 }
 
 main {
-  height: 93vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,22 +87,34 @@ main {
 
 .container {
   width: 400px;
-  height: 230px;
+  height: 100%;
   border: 2px solid white;
   border-radius: 10px;
   margin-bottom: 7%;
-  position: relative;
   box-sizing: border-box;
-  padding: 5px;
   display: flex;
   flex-direction: column;
 }
 
-.container h1 {
+.container > #geracao  {
+  color: yellow;
+  background-color: #0f071b;
+  border-radius: 10px 10px 0px 0px;
+  padding: 8px;
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  margin: 2%;
+  border-bottom: 2px solid white; 
+}
+
+.container > div > #ied  {
+
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; 
 }
 
 .atributos {
@@ -122,24 +133,20 @@ main {
 }
 
 .atributos p input {
-  background-color: rgba(255, 255, 255, 0.1); /* Set a transparent white background */
-  border: 1px solid white; /* Add a white border */
+  background-color: rgba(255, 255, 255, 0.1); 
+  border: 1px solid white;
   color: white;
   text-align: right;
 }
 
 
 .vg-geracao{
-  
   margin-top: 5%;;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
 }
 
-.vg-geracao img {
-  height: 100px;
-}
 
 .cabecalho-setor{
   display: flex;
@@ -166,20 +173,24 @@ main {
 
 .additional-container {
   width: 400px;
-  height: 230px;
+  height: 145px;
   border: 2px solid white;
   border-radius: 10px;
-  margin-bottom: 7%;
+  margin-left: 5%;
   position: relative;
   box-sizing: border-box;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .additional-container h1 {
+  color: yellow;
+  background-color: #0f071b;
+  border-radius: 10px 10px 0px 0px;
+  padding: 8px;
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  margin: 2%;
+  border-bottom: 2px solid white; 
 }
 
 .checkboxes {
@@ -199,6 +210,28 @@ main {
 
 .checkboxes input[type="checkbox"] {
   margin-right: 10px;
+}
+
+#info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#info-label {
+  background-color: white;
+  border-radius: 5px;
+  width: 170px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#data {
+  color: black;
+  font-weight: bold;
 }
 
 /*
