@@ -1,4 +1,77 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}Friends{% endblock %}
+
+{% block content %}
+<div class="main-content">
+  <div class="vg-geracao">
+    <div class="teste">
+      <div class="container">
+        <h1 id="geracao">Geração</h1>
+        <div class="atributos">
+          <div id="info">
+            <p> Tensâo (V) </p>
+            <div id="info-label"><p id="data">teste</p></div>
+          </div>
+          <div id="info">
+            <p> Corrente (A) </p>
+            <div id="info-label"><p id="data">teste</p></div>
+          </div>
+          <div id="info">
+            <p> Potência (MW) </p>
+            <div id="info-label"><p id="data">teste</p></div>
+          </div>
+          <div id="info">
+            <p> Frequência (Hz) </p>
+            <div id="info-label"><p id="data">teste</p></div>
+          </div>
+        </div>
+        <div>
+          <h1 id="ied">IED</h1>
+          <div class="atributos">
+            <div id="info">
+              <p> Série equip. </p>
+              <div id="info-label"><p id="data">teste</p></div>
+            </div>
+            <div id="info">
+              <p> Fornecedor </p>
+              <div id="info-label"><p id="data">teste</p></div>
+            </div>
+            <div id="info">
+              <p> Modelo </p>
+              <div id="info-label"><p id="data">teste</p></div>
+            </div>
+            <div id="info">
+              <p> Saúde equip. </p>
+              <div id="info-label"><p id="data">teste</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="additional-container">
+      <h1>Proteção</h1>
+      <div class="checkboxes">
+        <label>
+          <input type="checkbox" name="Checkbox 1"> Sobrecorrente (50)
+        </label>
+        <label>
+          <input type="checkbox" name="Checkbox 2"> Falha disjuntor (50BF)
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
@@ -84,4 +157,4 @@
     </div>
   </main>
 </body>
-</html>
+</html> -->

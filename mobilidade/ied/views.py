@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def index(request):
-    return HttpResponse("primeiro teste")
+def friends_view(request):
+    return render(request, 'mobilidade/templates/page.html')
 
 # Create your views here.

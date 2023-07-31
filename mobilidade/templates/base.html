@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Friends{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <header>
+    <div class="menu-content">
+      <img src="{% static 'img/Grafismo - Branco.png' %}" alt="" class="logo">
+      <h1 class="nome-friends">Friends</h1>
+      <nav class="header-menu">
+        <ul class="list-itens">
+          <li><a href="#">Visão Geral</a></li>
+          <li><a href="#">Geração</a></li>
+          <li><a href="#">Mapa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
