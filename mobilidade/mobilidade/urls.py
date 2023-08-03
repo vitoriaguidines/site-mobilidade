@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from ied import views
 
 #para direcionar p/ o aplicativo
 urlpatterns = [
-    path('ied/', include('ied.urls')),
+    path('/', views.friends_view, name='friends'),
+    path('', include('ied.urls')),
     path("admin/", admin.site.urls),
 ]
