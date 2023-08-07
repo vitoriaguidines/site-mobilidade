@@ -24,3 +24,4 @@ urlpatterns = [
     path('', include('ied.urls')),
     path("admin/", admin.site.urls),
 ]
+#erro ao encontrar o caminho para o server
