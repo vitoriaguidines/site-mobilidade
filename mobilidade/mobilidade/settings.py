@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "ied"
 ]
 
 MIDDLEWARE = [
@@ -69,7 +70,7 @@ TEMPLATES = [
 ]
 
 TEMPLATE_DIRS = (
-    r'C:/Users/shori/Desktop/FRIENDS front-end/site-mobilidade/mobilidade/templates',
+    os.path.join(BASE_DIR, 'templates'),
 )
 
 WSGI_APPLICATION = "mobilidade.wsgi.application"
@@ -81,7 +82,7 @@ WSGI_APPLICATION = "mobilidade.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "NAME": BASE_DIR / "qlite3",
     }
 }
 
@@ -120,9 +121,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "mobilidade/templates/page.html/"
-    # "mobilidade/templates/css/style.css"
 
+STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
